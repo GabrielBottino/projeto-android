@@ -7,8 +7,14 @@
     <title>Curiosidades da tecnologia</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="pacote-projeto-d010/imagens/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+          navigator.serviceWorker.register('pwabuilder-sw.js')
+        }
+      </script>      
     <header>
         <h1>Curiosidades de Tecnologia</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
